@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title>Luis Cortez Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
-</head>
-<body>
-    <p>Hello world</p>
-    
-</body>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contact</a>
+    </nav>
+
+    <header id="home">
+      <h1>The Sky is the Limit</h1>
+      <p>Bring your Imagination to Life</p>
+    </header>
+
+    <main>
+      <aside id="projects">
+        <h2>Projects</h2>
+        <a href="https://computerguy93.github.io/horiseon_refactor/"><img src="digital-marketing-meeting.jpg" width="300" height="200"></a>
+        <p>
+          Horiseon Refactor page
+        </p>
+      </aside>
+
+      <section id="about">
+        <h2>About</h2>
+        <a href=""><img src="world-in-hands.jpg" alt="world in hands" height="460"></a>
+        <p>
+          Luis Cortez works with his clients to provide an amazing webpage experience for their users
+        </p>
+
+        <section id="contacts">
+          <h2>Contact Us</h2>
+          <p></p>
+
+          <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+
+        </section>
+      </section>
+    </main>
+
+    <footer>
+        <a href="#home"><h3>Back to Top</h3></a>
+    </footer>
+  </body>
 </html>
